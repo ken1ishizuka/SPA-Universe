@@ -1,0 +1,130 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body, button {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+/* HEADER */
+.container {
+    height: 100vh;
+    padding: 18.5rem 2.4rem;
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 2.4rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 4.2rem;
+}
+
+a {
+    color: #C4C4CC;
+    font-size: clamp(1.8rem, 1.5000rem + 0.8333vw, 2.2rem);
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 18.5rem 10.2rem;
+    }
+
+    header {
+        flex-direction: row;
+        gap: 4.2rem;
+    }
+
+    nav {
+        gap: 5.4rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    header {
+        padding: 4rem 7.2rem;
+    }
+}
+
+.menu-active-page {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* BODY */
+h1 {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 125%; 
+}
+
+p {
+    font-size: clamp(1.6rem, 1.4500rem + 0.4167vw, 1.8rem);
+    line-height: 160%;
+    color: #E1E1E6;
+    max-width: 64.8rem;
+    margin-top: 1.6rem;
+}
+
+.btn {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    padding: 1.2rem 3.2rem;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-top: 2.4rem;
+
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: #02799D;
+}
+
+/* BACKGROUNDS */
+.home-page, .page-404 {
+    background: url("images/mountains-universe-1.png") no-repeat bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.universe-page {
+    background: url("images/mountains-universe02.png") no-repeat bottom;
+    background-size: cover
+}
+
+.exploration-page {
+    background: url("images/mountains-universe-3.png") no-repeat bottom;
+    background-size: cover
+}
